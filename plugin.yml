@@ -1,0 +1,14 @@
+name: TestPlugin
+main: Test\Test
+author: CrowBaldeYT
+version: 1.1.7
+api: 3.0.0
+commands:
+ test:
+   description: Test
+   usage: "/test"
+   permission: test.cmd
+
+ permission:
+  test.cmd:
+   default: OP
