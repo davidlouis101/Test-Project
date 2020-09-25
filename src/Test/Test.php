@@ -14,7 +14,6 @@ use pocketmine\entity\EffectInstance;
 use pocketmine\entity\Effect;
 use pocketmine\level\sound\EndermanTeleportSound;
 use pocketmine\utils\Config;
-use pocketmine\level\sound\AvilFallSound;
 
 class Test extends PluginBase{
   
@@ -48,7 +47,7 @@ switch($cmd->getName()){
 			  $config = $this->myConfig->getAll();
 				$message = $config["Messages"] ["TestMessage"];
 				//sound
-        $sender->getlevel()->addSound(new AvilFallSoundSound($sender));
+        $sender->getlevel()->addSound(new EndermanTeleportSound($sender));
          //message
 				$sender->sendMessage($message);
         $sender->sendPopup($message);
